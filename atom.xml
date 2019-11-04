@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>만능게산기 </title><id>http://calculator.v.corez.kr/</id><updated>2019-11-05T08:32:46+09:00</updated><subtitle>평형 계산기 세상의 모든 계산기 모음</subtitle><link href="http://calculator.v.corez.kr/" rel="alternate" type="text/html" /><link href="http://calculator.v.corez.kr/atom.xml" rel="self" type="application/atom+xml" /><author><name>yohan1002@gmail.com</name><uri>http://calculator.v.corez.kr/</uri><email>yohan1002@gmail.com</email></author>
+<entry><id>http://calculator.v.corez.kr/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</id><title type="html">글자수 세기</title><link rel="alternate" type="text/html" href="http://calculator.v.corez.kr/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/"/><published>2019-11-05T09:00:00+09:00</published><updated>2019-11-05T09:00:00+09:00</updated><author><name>yohan1002@gmail.com</name><uri>http://calculator.v.corez.kr/</uri><email>yohan1002@gmail.com</email></author><category term="계산기" label="계산기" /><category scheme="urn:tag" term="이력서" label="이력서" /><category scheme="urn:tag" term="자소서" label="자소서" /><summary><![CDATA[ 공백포함 줄바꿈포함 줄바꿈제외 공백제외 샘플 콘텐츠 : 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라  블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라  블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 ]]></summary><content type="html"><![CDATA[<div>
+	<textarea style="width: 100%; height: 300px;" id="input-message" v-model="inputMessage"></textarea>
+</div>
+
+<table style="width: 100%;">
+	<tr>
+		<th rowspan="2">공백포함</th>
+		<th>줄바꿈포함</th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th>줄바꿈제외</th>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<th colspan="2">공백제외</th>
+		<td></td>
+		<td v-text="inputMessage"></td>
+	</tr>
+</table>
+
+<p>
+	샘플 콘텐츠 : 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라
+</p>
+
+
+
+<p>
+	블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라
+	블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라
+</p>
+
+
+
+<p>
+	블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라
+	블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라 블라블라
+</p>]]></content></entry>
+
+
+</feed>

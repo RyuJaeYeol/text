@@ -1,0 +1,1 @@
+$(function(){new Vue({el:"#main-panel",data:{inputMessage:null},computed:{countByte_blank:function(){return 1},countByte_exceptBlank:function(){return 2},countChar_exceptBlank:function(){return 3},countChar_HWP:function(){return 4},countByte_HWP:function(){}}})});
