@@ -54,7 +54,7 @@
 						
 	<link rel="alternate" type="application/rss+xml" title="글자수세기 " href="https://text.yohan1002.com/atom.xml"/>
 
-			<link href="/res/css/min/ec5dc88d14410bc2d28700558c0ea4b8.css" type="text/css" rel="stylesheet" />
+			<link href="/res/css/min/ad4256f5e1ff2677239a4d1eb413b8e9.css" type="text/css" rel="stylesheet" />
 
 	
 			
@@ -130,11 +130,16 @@
 </nav>
 </section>
 <footer class="bottom">
-	hosted by <a href="https://github.com/" title="Github.com"><em>Github</em></a> / Posted by <a href="mailto:yohan1002@gmail.com" title="운영자에게 메일보내기"><em>yohan1002@gmail.com</em></a>
-	&nbsp;&nbsp;&nbsp;<a href="/policy/privacy/" target="_blank" title="개인정보처리방침">개인정보처리방침</a>
+	<ul class="links clearfix">
+		<li><a href="/policy/privacy/" target="_blank" title="개인정보처리방침">개인정보처리방침</a></li>
+	</ul>
+
+	<div class="copylight">
+		hosted by <a href="https://github.com/" class="hightlight" title="Github.com" target="_blank"><em>Github</em></a> | Posted by <a href="mailto:yohan1002@gmail.com" class="hightlight" title="운영자에게 메일보내기"><em>yohan1002@gmail.com</em></a>
+	</div>
 </footer>
 
 
-<script src="/res/js/min/a8c6578cffdeba39ba19f79c77a4dd9b.js" async="true" type="text/javascript"></script>
+<script src="/res/js/min/0c7ea6b2505e4ccb339f1ee7b1f6da6e.js" async="true" type="text/javascript"></script>
 </body>
 </html>
