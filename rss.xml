@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
 <channel>
-<title>글자수세기 </title><link>https://text.yohan1002.com</link><description>글자수세기,맞춤법검사기,이력서글자,자소서작성</description><image><title>글자수세기 </title><url>https://text.yohan1002.com/res/img/icon/icon.png</url><link>https://text.yohan1002.com</link><description>글자수세기,맞춤법검사기,이력서글자,자소서작성</description></image><managingEditor>요한1002 (yohan1002@gmail.com)</managingEditor><pubDate>Tue, 05 Nov 2019 16:32:45 +0900</pubDate><item><title>글자수세기</title><pubDate>Tue, 05 Nov 2019 20:00:00 +0900</pubDate><link>https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</link><guid>https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</guid><author>요한1002 (yohan1002@gmail.com)</author><category>계산기</category><description><![CDATA[<div id="calculator">
+<title>글자수세기 </title><link>https://text.yohan1002.com</link><description>글자수세기,맞춤법검사기,이력서글자,자소서작성</description><image><title>글자수세기 </title><url>https://text.yohan1002.com/res/img/icon/icon.png</url><link>https://text.yohan1002.com</link><description>글자수세기,맞춤법검사기,이력서글자,자소서작성</description></image><managingEditor>요한1002 (yohan1002@gmail.com)</managingEditor><pubDate>Tue, 05 Nov 2019 17:42:45 +0900</pubDate><item><title>글자수세기</title><pubDate>Tue, 05 Nov 2019 20:00:00 +0900</pubDate><link>https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</link><guid>https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</guid><author>요한1002 (yohan1002@gmail.com)</author><category>계산기</category><description><![CDATA[<div id="calculator">
 	<div>
 		<textarea id="input-message" placeholder="글자를 입력하세요" v-on:keyup="onInputChange"></textarea>
 	</div>
@@ -18,18 +18,77 @@
 		</tr>
 		</thead>
 		<tbody>
-		<tr>
-			<td><strong class="highlight" v-text="charCount"></strong> 자</td>
-			<td><strong class="highlight" v-text="charExceptLineBreakCount"></strong> 자</td>
-			<td><strong class="highlight" v-text="charExceptBlankCount"></strong> 자</td>
-		</tr>
-		<tr>
-			<td><strong class="highlight" v-text="byteCount"></strong> byte</td>
-			<td><strong class="highlight" v-text="byteExceptLineBreakCount"></strong> byte</td>
-			<td><strong class="highlight" v-text="byteExceptBlankCount"></strong> byte</td>
-		</tr>
+			<tr>
+				<td><strong class="highlight" v-text="charCount"></strong> 자</td>
+				<td><strong class="highlight" v-text="charExceptLineBreakCount"></strong> 자</td>
+				<td><strong class="highlight" v-text="charExceptBlankCount"></strong> 자</td>
+			</tr>
+			<tr>
+				<td><strong class="highlight" v-text="byteCount"></strong> byte</td>
+				<td><strong class="highlight" v-text="byteExceptLineBreakCount"></strong> byte</td>
+				<td><strong class="highlight" v-text="byteExceptBlankCount"></strong> byte</td>
+			</tr>
 		</tbody>
 	</table>
-</div>]]></description></item>
+
+	<p>※ 공백을 포함할 경우 공백도 하나의 글자로 간주해서 계산합니다.</p>
+	<p>※ 줄바꿈을 포함할 경우 줄바꿈도 공백으로 간주해서 하나의 글자로 계산합니다.</p>
+
+	<dl class="referenceBox">
+		<dt>&lt;계산과정&gt;</dt>
+		<dd>공백 포함: 빈공간(띄어쓰기)를 하나의 글자로 인식합니다.</dd>
+		<dd>공백 제외: 빈공간(띄어쓰기)를 무시합니다. 글자수 계산시에 포함하지 않습니다.</dd>
+		<dd>줄바꿈 포함: 줄바꿈(엔터)을 하나의 공백으로 인식합니다. 따라서 공백을 포함할 경우 하나의 글자로 인식합니다.</dd>
+		<dd>줄바꿈 제외: 줄바꿈(엔터)을 무시합니다. 존재하는 않는 문자로 인식하기에 계산시에 포함하지 않습니다.</dd>
+	</dl>
+
+	<dl class="referenceBox">
+		<dt>&lt;바이트 수&gt;</dt>
+		<dd>한글: 2byte</dd>
+		<dd>영어: 1byte</dd>
+		<dd>공백: 1byte</dd>
+		<dd>숫자: 1byte</dd>
+		<dd>특수문자: 1byte</dd>
+	</dl>
+</div>
+
+
+<h3>글자수 세기의 활용법</h3>
+<p>이력서를 작성하거나 각종 대회에 참가할 때 글자수를 제한하는 경우가 많이 있습니다.</p>
+<p>예를 들어 자소서(자기소개서), 성장과정, 성격의 장단점, 경력사항, 사회활동, 지원동기, 포부등 다양한 곳에서 글자수를 제한 합니다.</p>
+<p>취업을 위해 이력서를 작성하는 경우 특히나 적절한 글자수를 맞추는게 중요합니다.</p>
+<p>글자수세기 계산기의 경우 입력한 글자에 따라 자동으로 글자수를 계산해 줍니다.</p>
+<p>그렇다면 공백을 포함하는 경우와 포함하지 않는 경우를 어떻게 구분 할까요?</p>
+<p>결론부터 말씀드리면 온라인 상으로 제출하는 문서의 경우 대부분 <strong class="highlight">공백, 줄바꿈</strong>을 포함한 글자수를 기준으로 합니다.</p>
+<p>&nbsp;</p>
+
+<h3>몇 글자가 적절할까?</h3>
+<p>이 부분은 사실 정해진 해답이 없습니다.</p>
+<p>가장 일반적인 경우라면 제한된 글자수에서 혹시나 너무 적다고 나쁜 인상을 주지 않을까하는 생각에 80%이상 작성하게 될 것입니다.</p>
+<p>하지만 글이 짜임새가 있고, 명확하게 자신의 생각을 잘 전달할 수 있다면 글의 길이는 중요하지 않습니다.</p>
+<p>결국 서류를 보는 사람은 <strong class="highlight">자신에게 필요한 사람인가</strong>를 판별하기 위해 보는 것이기 때문 입니다.</p>
+<p>중요한 것은 이 서류를 왜 작성해야하는지 동기를 파악하고, 그 흐름에 맞게 자산의 생각을 잘 정리해서 전달하는게 중요할 것입니다.</p>
+<p>&nbsp;</p>
+
+<h3>&lt;효과적으로 글쓰기 위한 7가지 방법&gt;</h3>
+<dl>
+	<dt>1. 글을 읽는사람(체용담당자)가 글에서 무엇을 찾고자 하는지를 고민해라.</dt>
+	<dt>2. 처음부터 잘 쓸 생각을 버려라.</dt>
+	<dd>- 우선 넣어야할 내용을 글의 흐름에 따라 대략적으로 넣는다.</dd>
+	<dd>- 다시 읽어보면서 순서를 조정하거나, 수정을 반복한다.</dd>
+	<dd>- 수정과정에서 <strong class="highlight">흐름상 필요없는 내용은 가감히 삭제</strong>한다.</dd>
+	<dt>3. 문장은 줄일 수 있다면 줄인다. 자칫 장문으로 이어지는 경우 쓸데 없는 말이 반복되거나 할 수 있다.</dt>
+	<dt>4. 구체적인 경험, 경험이 없다면 공감대를 형성할 수 있는 내용을 적절하게 넣어준다.</dt>
+	<dd>- 글 쓰기가 어렵다고해서 장황하게 늘어놓는 것은 금물</dd>
+	<dt>5. 단점을 자신의 성장 동력으로 작성해라</dt>
+	<dt>6. 자료수집에 집중해라</dt>
+	<dd>- 어떤 글이든 이 글을 요구하는 사람의 목적을 늘 생각해야 한다.</dd>
+	<dd>- 이 사람은 이 글에서 어떤 사람을 찾는가에 초점을 맞추어서 정보를 수집한다.</dd>
+	<dd>- 정보가 많다고 해서 모두 다 억지로 나열하는 것은 절대적으로 피하자</dd>
+	<dd>- 많은 정보를 나열하는 것보다, 전문적으로 보이는 한 줄이 더 중요하다.</dd>
+	<dt>7. 솔직하고 당당하자.</dt>
+</dl>
+
+]]></description></item>
 </channel>
 </rss>
