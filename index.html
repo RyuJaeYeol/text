@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0">
 		<title>글자수세기 </title>
-	<meta name="author" content="yohan1002@gmail.com">
+	<meta name="author" content="요한1002">
 	<meta name="keywords" content="글자수세기,맞춤법검사,자기소개서,글자수계산기,맞춤법,성장과정">
 	<meta name="description" content="글자수세기,맞춤법검사기,이력서글자,자소서작성 : 글자수세기 ">
 	<meta name="referrer" content="always">
@@ -54,7 +54,7 @@
 						
 	<link rel="alternate" type="application/rss+xml" title="글자수세기 " href="https://text.yohan1002.com/atom.xml"/>
 
-			<link href="/res/css/min/b53345ce6dc210a1daf50e322645be6b.css" type="text/css" rel="stylesheet" />
+			<link href="/res/css/min/aca0b0d2780d01da534d52b96226dd15.css" type="text/css" rel="stylesheet" />
 
 	
 			
@@ -82,34 +82,36 @@
 		<h1 class="entry-title">글자수세기</h1>
 	</div>
 
-	<div>
-		<textarea id="input-message" placeholder="글자를 입력하세요" v-on:keyup="onInputChange"></textarea>
-	</div>
+	<div id="calculator">
+		<div>
+			<textarea id="input-message" placeholder="글자를 입력하세요" v-on:keyup="onInputChange"></textarea>
+		</div>
 
-	<table class="table">
-		<thead>
-			<tr>
-				<th colspan="2">공백포함</th>
-				<th rowspan="2">공백제외</th>
-			</tr>
-			<tr>
-				<th>줄바꿈포함</th>
-				<th>줄바꿈제외</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><strong class="highlight" v-text="charCount"></strong> 자</td>
-				<td><strong class="highlight" v-text="charExceptLineBreakCount"></strong> 자</td>
-				<td><strong class="highlight" v-text="charExceptBlankCount"></strong> 자</td>
-			</tr>
-			<tr>
-				<td><strong class="highlight" v-text="byteCount"></strong> byte</td>
-				<td><strong class="highlight" v-text="byteExceptLineBreakCount"></strong> byte</td>
-				<td><strong class="highlight" v-text="byteExceptBlankCount"></strong> byte</td>
-			</tr>
-		</tbody>
-	</table>
+		<table class="table">
+			<thead>
+				<tr>
+					<th colspan="2">공백포함</th>
+					<th rowspan="2">공백제외</th>
+				</tr>
+				<tr>
+					<th>줄바꿈포함</th>
+					<th>줄바꿈제외</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><strong class="highlight" v-text="charCount"></strong> 자</td>
+					<td><strong class="highlight" v-text="charExceptLineBreakCount"></strong> 자</td>
+					<td><strong class="highlight" v-text="charExceptBlankCount"></strong> 자</td>
+				</tr>
+				<tr>
+					<td><strong class="highlight" v-text="byteCount"></strong> byte</td>
+					<td><strong class="highlight" v-text="byteExceptLineBreakCount"></strong> byte</td>
+					<td><strong class="highlight" v-text="byteExceptBlankCount"></strong> byte</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 	<p>
 
@@ -118,12 +120,41 @@
 </div>
 <nav id="sidebar" class="slideout-menu">
 	<div class="box">
-				
+										
+			
+																<dl class="tags">
+						<dt>분류</dt>
+													<dd>
+								<a href="https://text.yohan1002.com/계산기/category/계산기/" title="계산기 목록보기">
+									계산기<span>(1)</span>
+								</a>
+							</dd>
+											</dl>
+							
+			
+																<dl class="tags">
+						<dt>태그</dt>
+													<dd>
+								<a href="https://text.yohan1002.com/계산기/tag/이력서/" title="이력서 목록보기">
+									이력서<span>(1)</span>
+								</a>
+							</dd>
+													<dd>
+								<a href="https://text.yohan1002.com/계산기/tag/자소서/" title="자소서 목록보기">
+									자소서<span>(1)</span>
+								</a>
+							</dd>
+											</dl>
+							
+			
+					
 				
 		
 
 		
 					<ul class="links">
+									<li><a href="https://text.yohan1002.com/archives/" class="text-inverse" title="전체글 보기">전체글 보기</a></li>
+					<li class="pipe"></li>
 								<li><a href="https://text.yohan1002.com/atom.xml" class="text-inverse" target="_blank" title="RSS Feed">RSS</a></li>
 			</ul>
 			</div>
@@ -136,11 +167,11 @@
 	</ul>
 
 	<div class="copylight">
-		hosted by <a href="https://github.com/" class="hightlight" title="Github.com" target="_blank"><em>Github</em></a> | Posted by <a href="mailto:yohan1002@gmail.com" class="hightlight" title="운영자에게 메일보내기"><em>yohan1002@gmail.com</em></a>
+		hosted by <a href="https://github.com/" class="hightlight" title="Github.com" target="_blank"><em>Github</em></a> | Posted by <a href="mailto:yohan1002@gmail.com" class="hightlight" title="운영자에게 메일보내기"><em>요한1002</em></a>
 	</div>
 </footer>
 
 
-<script src="/res/js/min/0c7ea6b2505e4ccb339f1ee7b1f6da6e.js" async="true" type="text/javascript"></script>
+<script src="/res/js/min/7e85caf2bf91bfb57b936ce7a00a8766.js" async="true" type="text/javascript"></script>
 </body>
 </html>

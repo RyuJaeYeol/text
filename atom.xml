@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+<title>글자수세기 </title><id>https://text.yohan1002.com/</id><updated>2019-11-05T16:32:45+09:00</updated><link href="https://text.yohan1002.com/" rel="alternate" type="text/html" /><link href="https://text.yohan1002.com/atom.xml" rel="self" type="application/atom+xml" /><author><name>요한1002</name><uri>https://text.yohan1002.com/</uri><email>yohan1002@gmail.com</email></author>
+<entry><id>https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/</id><title type="html">글자수세기</title><link rel="alternate" type="text/html" href="https://text.yohan1002.com/%EA%B3%84%EC%82%B0%EA%B8%B0/%EA%B8%80%EC%9E%90%EC%88%98%EC%84%B8%EA%B8%B0/"/><published>2019-11-05T20:00:00+09:00</published><updated>2019-11-05T20:00:00+09:00</updated><author><name>요한1002</name><uri>https://text.yohan1002.com/</uri><email>yohan1002@gmail.com</email></author><category term="계산기" label="계산기" /><category scheme="urn:tag" term="이력서" label="이력서" /><category scheme="urn:tag" term="자소서" label="자소서" /><summary><![CDATA[ 공백포함 공백제외 줄바꿈포함 줄바꿈제외 자 자 자 byte byte byte ]]></summary><content type="html"><![CDATA[<div id="calculator">
+	<div>
+		<textarea id="input-message" placeholder="글자를 입력하세요" v-on:keyup="onInputChange"></textarea>
+	</div>
+
+	<table class="table">
+		<thead>
+		<tr>
+			<th colspan="2">공백포함</th>
+			<th rowspan="2">공백제외</th>
+		</tr>
+		<tr>
+			<th>줄바꿈포함</th>
+			<th>줄바꿈제외</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td><strong class="highlight" v-text="charCount"></strong> 자</td>
+			<td><strong class="highlight" v-text="charExceptLineBreakCount"></strong> 자</td>
+			<td><strong class="highlight" v-text="charExceptBlankCount"></strong> 자</td>
+		</tr>
+		<tr>
+			<td><strong class="highlight" v-text="byteCount"></strong> byte</td>
+			<td><strong class="highlight" v-text="byteExceptLineBreakCount"></strong> byte</td>
+			<td><strong class="highlight" v-text="byteExceptBlankCount"></strong> byte</td>
+		</tr>
+		</tbody>
+	</table>
+</div>]]></content></entry>
+
+
+</feed>
