@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1.0">
 		<title>글자수세기 - 글자수세기 </title>
 	<meta name="author" content="요한1002">
-	<meta name="keywords" content="글자수계산기,자기소개서,글자수계산,글자길이구하기,이력서작성도구">
-	<meta name="description" content="자기소개서,이력서 등 글자수세기가 필요한 곳에서 사용되는 글자수계산기">
+	<meta name="keywords" content="">
+	<meta name="description" content="글자수세기,맞춤법검사기,이력서글자,자소서작성 : 글자수세기 - 글자수세기 ">
 	<meta name="referrer" content="always">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" type="image/x-icon" href="https://text.yohan1002.com/favicon.ico"/>
@@ -34,7 +34,7 @@
 	<meta property="og:type" content="article">
 	<meta property="og:site_name" content="글자수세기 ">
 	<meta property="og:title" content="글자수세기">
-	<meta property="og:description" content="자기소개서,이력서 등 글자수세기가 필요한 곳에서 사용되는 글자수계산기">
+	<meta property="og:description" content="">
 	<meta property="og:url" content="https://text.yohan1002.com/계산기/글자수세기/"/>
 	<meta property="og:image" content="https://text.yohan1002.com/res/img/icon/icon.png">
 	
@@ -43,7 +43,7 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@">
 	<meta name="twitter:title" content="글자수세기">
-	<meta name="twitter:description" content="자기소개서,이력서 등 글자수세기가 필요한 곳에서 사용되는 글자수계산기">
+	<meta name="twitter:description" content="">
 	<meta property="twitter:image" content="https://text.yohan1002.com/res/img/icon/icon.png">
 	
 
